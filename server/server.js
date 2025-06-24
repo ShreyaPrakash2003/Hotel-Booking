@@ -16,10 +16,8 @@ connectCloudinary();
 
 const app = express();
 app.use(cors({
-  origin: "https://hotel-booking-679n.vercel.app/",
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization", "svix-id", "svix-signature", "svix-timestamp"],
+  origin: '*',
+  credentials: true
 })); // Enable Cross-Origin Resource Sharing
 
 // API to listen to Stripe Webhooks
