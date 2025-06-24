@@ -16,7 +16,7 @@ connectCloudinary();
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://hotel-booking-679n.vercel.app/",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "svix-id", "svix-signature", "svix-timestamp"],
